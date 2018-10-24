@@ -95,9 +95,12 @@ $(document).ready(function(){
    $(".startl").animate({left:"-1000px"},2000);
    $(".startr").animate({right:"-1125px"},2000);
    $(".startr").hide(1);
-   $(".btstr").css({"display":"block"})
-   $(".bl").css({"display":"block"})
+   $(".btstr").show(1500)
+   $(".bl").show(1500)
    $(".bl").click(function(){
+      $(".ikr").click(function(){
+      $(".bl").hide()
+    });
       $(".bl").click(function(){
       $(".btstr").css({"display":"none"})
       $(".bl").addClass("bl1");
@@ -115,7 +118,6 @@ $(document).ready(function(){
    });
 });
 });
-
 
 
 /*
@@ -136,7 +138,22 @@ $(document).ready(function(){
 });
     });
 
-
+$(document).ready(function(){
+   $(".vvid").click(function(){
+   $(".vvid").animate({right:"510px"},2000);
+   $(".vid").show(700)
+   $(".srb").show(700)
+   return 0;
+   });
+});
+$(document).ready(function(){
+  $(".srb").click(function(){
+   $(".vvid").animate({right:"-510px"},2000);
+   $(".vid").hide(700)
+   $(".srb").hide(700)
+  });
+});
+/*
 function examfuc(event) {
 	event.preventDefault();
 	var exam =document.forms.name1.username.value;
@@ -181,3 +198,4 @@ blo1.onkeyup = function() {
 blo2.onfocus = function() {
 	console.log("вцуйкапукп");
 }
+*/
