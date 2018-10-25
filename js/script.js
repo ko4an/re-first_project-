@@ -138,19 +138,23 @@ $(document).ready(function(){
 });
     });
 
+
 $(document).ready(function(){
    $(".vvid").click(function(){
-   $(".vvid").animate({right:"510px"},2000);
+   $(".vvid").animate({right:"500px"},2000);
+   $(".vid").animate({right:"10px"},2000);
    $(".vid").show(700)
    $(".srb").show(700)
-   return 0;
+   $(".srb").animate({right:"500px"},2000);
    });
 });
 $(document).ready(function(){
   $(".srb").click(function(){
-   $(".vvid").animate({right:"-510px"},2000);
+   $(".vvid").animate({right:"0px"},2000);
    $(".vid").hide(700)
+   $(".vid").animate({right:"-500px"},2000);
    $(".srb").hide(700)
+   $(".srb").animate({right:"0px"},2000);
   });
 });
 /*
